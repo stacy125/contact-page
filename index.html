@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Page</title>
+</head>
+<header>
+    <div class="contact-info">
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/stacy-leitstein-a921a38a/"><img src="linkedin.png" width="75px"
+                height="75px" /></a>
+        <a href="https://github.com/stacy125"><img src="github.png" width="75px" height="75px" /></a>
+    </div>
+    <div id="info">
+    <div >Stacy Leitstein<br>787-212-8740<br>unique523@yahoo.com</div>
+    </div>
+    <div class="button">
+        <a href="https://stacy125.github.io/homepage/"><button class="home">HOME</button></a>
+        <a href="https://stacy125.github.io/homepage/about/about.html"><button class="about">ABOUT ME</button></a>
+        <a href="/homepage/business/business.html"><button class="business">BUSINESS EXPERIENCE</button></a>
+        <a href="https://stacy125.github.io/Projects/"><button class="projects">PROJECTS</button></a>
+        <a href="https://stacy125.github.io/water"><button class="contact">CONTACT INFO</button></a>
+    </div>
+    </div>
+</header>
+<body>
+    <div class="background">
+        <div class="water"></div>
+    </div>
+    <svg>
+        <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+            <feTurbulence id="sea-filter" numOctaves="3" seed="2" baseFrequency="0.02 0.05"></feTurbulence>
+            <feDisplacementMap scale="20" in="SourceGraphic" ></feDisplacementMap>
+            <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"></animate>
+        </filter>
+    </svg>
+    
+</body>
+</html>
