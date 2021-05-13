@@ -1,41 +1,65 @@
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 480px)
+  and (resolution: 150dpi) {
+    
+}
+
+* {
+    margin: 0;
+} 
+
+
 
 html {
-
     background-color: black;
 }
 
-.contact-info{
+.contact-info {
     display: flex;
+    
 }
 
 .icons {
-    position: relative;
-    padding: 5%;
-    margin-left: 5%;
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    /* padding: 5%; */
+    /* margin-left: 5%; */
+    z-index: 2;
 }
 
 #info {
-    margin-left: 50%;
-    padding: 5%;
-    font-size: 30px;
+    position: absolute;
+    left: 40%;
+    top: 60%;
+    /* padding: 5%; */
+    font-size: 2em;
     color: rgb(122, 1, 235);
+    z-index: 2;
 }
 
 .button {
     position: absolute;
-    margin-left: 25%;
-    border: 3px solid black;
-    border-radius: 10px;
+    margin-left: 35%;
+    top: 10%;
+    columns: 1;
+    z-index: 2;
 }
 
 button {
-    background-color: #27BDF9;
+    font-size: .5em;
+    background-color: rgb(204, 178, 139);
+    border: 3px solid black;
+    border-radius: 10px;
     color: rgb(122, 1, 235);
 } 
-    
+
 .background {
+    border: 30px solid black;
+    border-radius: 10px;
     position: absolute;
-    top: 40%;
+    top: 0;
     left: 0;
     height: 100%;
     width: 100%;
@@ -43,12 +67,12 @@ button {
     background-size: cover;
 }
 
-.background .water {
+ .water {
     position: absolute;
     background-image: url("beach-map.png");
     background-size: cover;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     filter: url("#turbulence");
